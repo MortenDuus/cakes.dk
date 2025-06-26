@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Cakes.dk!"
 date:   2025-06-26 14:50:32 +0200
 categories: jekyll update
 ---
