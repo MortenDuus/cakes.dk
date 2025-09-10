@@ -1,0 +1,32 @@
+---
+layout: page
+title: Opskrifter
+permalink: /recipes/
+---
+<div class="recipes-index">
+  <h1>Alle Opskrifter</h1>
+  <input id="recipe-search" type="search" placeholder="Søg..." aria-label="Søg opskrifter" />
+  <ul id="recipe-list">
+    {% assign items = site.recipes | sort: 'title' %}
+    {% for r in items %}
+      <li class="recipe-card" data-title="{{ r.title | downcase }}" data-tags="{{ r.tags | join: ' ' | downcase }}">
+        <a href="{{ r.url }}">
+          <h2>{{ r.title }}</h2>
+          <p>{{ r.summary }}</p>
+          <span class="pill">{{ r.difficulty }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+<script>
+  const input = document.getElementById('recipe-search');
+  const items = Array.from(document.querySelectorAll('#recipe-list .recipe-card'));
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    items.forEach(li => {
+      const hay = li.dataset.title + ' ' + li.dataset.tags;
+      li.style.display = hay.includes(q) ? '' : 'none';
+    });
+  });
+</script>

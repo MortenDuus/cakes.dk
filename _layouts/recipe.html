@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article class="recipe">
+  <header class="recipe-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p class="summary">{{ page.summary }}</p>{% endif %}
+    <ul class="meta">
+      {% if page.difficulty %}<li>Sværhedsgrad: <strong>{{ page.difficulty }}</strong></li>{% endif %}
+      <li>Tid: {{ page.prep_time }} / {{ page.bake_time }} (rest {{ page.rest_time }})</li>
+      <li>Portioner: {{ page.servings }}</li>
+    </ul>
+    <div class="taglist">
+      {% for t in page.tags %}<a class="tag" href="/tags/#{{ t | slugify }}">#{{ t }}</a>{% endfor %}
+    </div>
+    {% include share-links.html %}
+  </header>
+  <div class="content">
+    {{ content }}
+  </div>
+  <footer class="recipe-footer">
+    <p class="version">Version {{ page.version }} | Senest opdateret {{ page.date | date: "%Y-%m-%d" }}</p>
+  </footer>
+</article>

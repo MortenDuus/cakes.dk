@@ -26,6 +26,27 @@ baseurl: "" # Leave empty if using custom domain
 url: "https://www.cakes.dk"
 github_username: mortenduus
 
+# Navigation pages (for minima theme)
+header_pages:
+  - about.markdown
+  - recipes/index.html
+
+# Collections
+collections:
+  recipes:
+    output: true
+    permalink: /recipes/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "recipes"
+    values:
+      layout: recipe
+      share: true
+      image: /assets/images/placeholder.jpg
+      lang: da
+
 # Build settings
 theme: minima
 # GitHub Pages specific
@@ -33,6 +54,21 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+# Sass / CSS pipeline (optional future enhancement)
+sass:
+  style: compressed
+
+# Custom site variables
+site_theme:
+  color_primary: "#D94E62" # raspberry
+  color_secondary: "#F7C948" # custard
+  color_bg: "#FFF9F7"
+  color_text: "#2E2A27"
+  radius: "10px"
+  font_heading: "'Poppins', 'Helvetica Neue', Arial, sans-serif"
+  font_body: "'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen"
+
 
 # Build settings
 markdown: kramdown
