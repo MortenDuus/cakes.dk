@@ -30,6 +30,7 @@ github_username: mortenduus
 header_pages:
   - about.markdown
   - recipes/index.html
+  - tags/index.html
 
 # Collections
 collections:
@@ -44,7 +45,7 @@ defaults:
     values:
       layout: recipe
       share: true
-      image: /assets/images/placeholder.jpg
+      image: /assets/images/placeholder.svg
       lang: da
 
 # Build settings

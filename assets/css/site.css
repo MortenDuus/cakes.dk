@@ -27,3 +27,11 @@ body { background: var(--color-bg); font-family: var(--font-body); color: var(--
  .share-links a:hover { text-decoration:underline; }
  .recipe { background:#fff; padding:2rem 2.2rem; border-radius: var(--radius); box-shadow: var(--shadow); }
  .recipe-footer { margin-top:2rem; font-size:.65rem; opacity:.7; }
+/* Hero (home) */
+.home .wrapper > p:first-of-type { font-size:1.05rem; line-height:1.5; }
+.site-header { background:#fff; box-shadow:var(--shadow); margin-bottom:1.5rem; }
+.site-header .wrapper { display:flex; align-items:center; justify-content:space-between; padding:.7rem 1rem; }
+.site-title { font-family:var(--font-heading); font-weight:600; font-size:1.2rem; text-decoration:none; color:var(--color-primary); }
+.site-nav a { margin-left:1rem; text-decoration:none; color:var(--color-text); font-size:.85rem; }
+.site-nav a:hover { color:var(--color-primary); }
+.site-footer { margin-top:3rem; padding:2rem 0; font-size:.7rem; text-align:center; opacity:.75; }

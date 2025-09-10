@@ -1,0 +1,15 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder cake image">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDDE3" />
+      <stop offset="100%" stop-color="#F7C948" stop-opacity="0.55" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#g)" rx="24" />
+  <g fill="#D94E62" font-family="'Poppins', Arial, sans-serif" text-anchor="middle">
+    <text x="300" y="185" font-size="42" font-weight="600">Cakes.dk</text>
+    <text x="300" y="235" font-size="20" fill="#633">Inspiration kommer snart</text>
+  </g>
+  <circle cx="300" cy="105" r="38" fill="#fff" stroke="#D94E62" stroke-width="4" />
+  <path d="M265 120 Q300 95 335 120" stroke="#D94E62" stroke-width="4" fill="none" stroke-linecap="round" />
+</svg>
