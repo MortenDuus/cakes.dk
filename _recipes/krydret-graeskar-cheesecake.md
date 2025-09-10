@@ -35,7 +35,22 @@ ingredients:
 decoration_tips: "Swirl syrnet fløde på midten og drys let kanel for kontrast." 
 dietary_tags: ["vegetar"]
 tags: ["efterår","græskar","cheesecake"]
-version: 1
+version: 2
+nutrition_per_serving:
+  energy_kcal: 340
+  fat_g: 24
+  sat_fat_g: 13
+  carbs_g: 24
+  sugar_g: 16
+  protein_g: 6
+  fiber_g: 2
+substitutions:
+  - original: "600 g flødeost"
+    substitute: "450 g flødeost + 150 g neutral skyr 0.2%"
+    effect: "Reducerer fedt og øger protein; lidt fastere tekstur."
+  - original: "180 g brun farin"
+    substitute: "140 g brun farin + 25 g kokossukker"
+    effect: "Lidt lavere raffineret sukker og mere mineralsk karamelnote."
 ---
 ## Introduktion
 Efterår i et stykke: kryddervarme, cremet tekstur og mild græskar dybde.

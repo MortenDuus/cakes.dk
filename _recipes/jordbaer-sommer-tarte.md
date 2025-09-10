@@ -34,7 +34,22 @@ ingredients:
 decoration_tips: "Anret jordbær i koncentriske cirkler for et patisserie-look." 
 dietary_tags: ["vegetar"]
 tags: ["jordbær","sommer","tarte"]
-version: 1
+version: 2
+nutrition_per_serving:
+  energy_kcal: 260
+  fat_g: 14
+  sat_fat_g: 7
+  carbs_g: 28
+  sugar_g: 14
+  protein_g: 5
+  fiber_g: 3
+substitutions:
+  - original: "110 g koldt smør"
+    substitute: "80 g koldt smør + 25 g mandelsmør"
+    effect: "En smule mindre mættet fedt og mere nøddeagtig aroma."
+  - original: "70 g sukker (creme)"
+    substitute: "50 g sukker + 10 g birkesødet erytritol"
+    effect: "Reducerer tilsat sukker ~15–20% (kan give let kølende note)."
 ---
 ## Introduktion
 Frisk, elegant og aromatisk – perfekt som sæsonens centerpiece i juni og juli.

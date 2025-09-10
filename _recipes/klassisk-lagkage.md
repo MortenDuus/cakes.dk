@@ -28,7 +28,22 @@ ingredients:
 decoration_tips: "Top med hindbær i cirkel og let sigtet flormelis."
 dietary_tags: ["vegetar"]
 tags: ["lagkage","hindbær","fødselsdag","sommer"]
-version: 1
+version: 2
+nutrition_per_serving:
+  energy_kcal: 285
+  fat_g: 15
+  sat_fat_g: 9
+  carbs_g: 30
+  sugar_g: 20
+  protein_g: 6
+  fiber_g: 2
+substitutions:
+  - original: "3 dl piskefløde"
+    substitute: "2 dl piskefløde + 100 g græsk yoghurt 5%"
+    effect: "Reducerer mættet fedt; lidt friskere syrlighed."
+  - original: "60 g sukker (i creme samlet)"
+    substitute: "45 g sukker + 10 g birkesødet erythritol"
+    effect: "Reducerer tilsat sukker ~20%."
 ---
 ## Introduktion
 En klassisk lagkage hvor syrlige hindbær balancerer den runde vanilje og lette flødeskum.

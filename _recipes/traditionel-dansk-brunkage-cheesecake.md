@@ -36,7 +36,22 @@ ingredients:
 decoration_tips: "Top med letpisket fløde rosetter og drys brunkagesmuler ved kanten." 
 dietary_tags: ["vegetar"]
 tags: ["jul","brunkage","cheesecake"]
-version: 1
+version: 2
+nutrition_per_serving:
+  energy_kcal: 355
+  fat_g: 25
+  sat_fat_g: 14
+  carbs_g: 26
+  sugar_g: 18
+  protein_g: 6
+  fiber_g: 1
+substitutions:
+  - original: "650 g flødeost"
+    substitute: "500 g flødeost + 150 g skyr 0.2%"
+    effect: "Reducerer fedt; lidt friskere syreprofil."
+  - original: "160 g rørsukker"
+    substitute: "120 g rørsukker + 25 g dadelsukker"
+    effect: "Lavere raffinering og dybere karameltone."
 ---
 ## Introduktion
 En aromatisk julekage der kombinerer brunkagekrydderier med silkeblød cheesecake.

@@ -31,7 +31,25 @@ ingredients:
 decoration_tips: "Dryp smeltet chokolade i tilfældige striber og drys med flagesalt." 
 dietary_tags: ["vegetar"]
 tags: ["chokolade","hurtig","hyggestund"]
-version: 1
+version: 2
+nutrition_per_serving:
+  energy_kcal: 315
+  fat_g: 16
+  sat_fat_g: 4.2
+  carbs_g: 39
+  sugar_g: 24
+  protein_g: 5
+  fiber_g: 3
+substitutions:
+  - original: "250 g sukker"
+    substitute: "170 g sukker + 40 g fint kokosblomstsukker + 30 g æblemos"
+    effect: "Reducerer raffineret sukker ~25% og bevarer fugt via æblemos. Lidt mørkere karamelsmag."
+  - original: "60 g smør (glasur)"
+    substitute: "45 g koldpresset rapsolie + 15 g mandelsmør"
+    effect: "Lavere mættet fedt; mandelsmør giver fylde og nøddeprofil."
+  - original: "120 ml raps- eller solsikkeolie"
+    substitute: "90 ml koldpresset rapsolie + 30 g græsk yoghurt 2%"
+    effect: "Lettere mundfølelse og lidt ekstra protein."
 ---
 ## Introduktion
 En intens og fugtig chokoladekage der røres sammen i én skål og bages hurtigt.

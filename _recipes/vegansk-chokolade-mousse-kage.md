@@ -30,7 +30,22 @@ ingredients:
 decoration_tips: "Sigte et tyndt lag kakao og anret få bær asymmetrisk for moderne look." 
 dietary_tags: ["vegansk","laktosefri"]
 tags: ["vegansk","chokolade","mousse"]
-version: 1
+version: 2
+nutrition_per_serving:
+  energy_kcal: 270
+  fat_g: 18
+  sat_fat_g: 8
+  carbs_g: 20
+  sugar_g: 12
+  protein_g: 6
+  fiber_g: 4
+substitutions:
+  - original: "60 g kokosolie"
+    substitute: "40 g koldpresset rapsolie + 20 g kakao-smør"
+    effect: "Reducerer mættet fedt og bevarer struktur via kakaosmør."
+  - original: "40 g ahornsirup"
+    substitute: "25 g ahornsirup + 10 g dadelsirup"
+    effect: "Lidt lavere GI og dybere karameltone."
 ---
 ## Introduktion
 En elegant og kompakt kage med luftig mousse uden gelatine – tofu giver struktur uden at dominere smagen.

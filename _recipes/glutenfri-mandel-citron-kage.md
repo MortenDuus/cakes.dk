@@ -31,7 +31,22 @@ ingredients:
 decoration_tips: "Dryp tynd citronglasur og pynt med tynde strimler citronskal." 
 dietary_tags: ["glutenfri","vegetar"]
 tags: ["citron","glutenfri","mandel"]
-version: 1
+version: 2
+nutrition_per_serving:
+  energy_kcal: 245
+  fat_g: 15
+  sat_fat_g: 2.0
+  carbs_g: 20
+  sugar_g: 12
+  protein_g: 7
+  fiber_g: 3
+substitutions:
+  - original: "80 ml mild olivenolie"
+    substitute: "60 ml ekstra jomfru olivenolie + 40 g usødet æblemos"
+    effect: "Reducerer samlet fedt og kalorier; æblemos holder fugt."
+  - original: "150 g sukker"
+    substitute: "110 g sukker + 20 g inulin pulver"
+    effect: "Sænker tilsat sukker ~20% og øger fiber (kan give let kølig mundfornemmelse)."
 ---
 ## Introduktion
 En frisk og aromatisk kage uden hvedemel – mandelmel giver saftig struktur og let nøddepræg.
