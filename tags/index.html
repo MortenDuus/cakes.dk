@@ -6,22 +6,22 @@ permalink: /tags/
 <h1>Tags</h1>
 <p>Browse inspirerende emner.</p>
 <div class="tag-cloud">
-  {% assign all_tags = site.recipes | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
-  {% for t in all_tags %}
+    {% assign all_tags = site.recipes | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
+    {% for t in all_tags %}
     {% assign slug = t | slugify %}
     <a class="tag" href="#{{ slug }}">#{{ t }}</a>
-  {% endfor %}
+    {% endfor %}
 </div>
 <hr />
 {% for t in all_tags %}
-  {% assign slug = t | slugify %}
-  <section id="{{ slug }}">
+{% assign slug = t | slugify %}
+<section id="{{ slug }}">
     <h2>#{{ t }}</h2>
     <ul>
-      {% assign filtered = site.recipes | where_exp: 'r','r.tags contains t' %}
-      {% for r in filtered %}
+        {% assign filtered = site.recipes | where_exp: 'r','r.tags contains t' %}
+        {% for r in filtered %}
         <li><a href="{{ r.url }}">{{ r.title }}</a> – {{ r.summary }}</li>
-      {% endfor %}
+        {% endfor %}
     </ul>
-  </section>
+</section>
 {% endfor %}
