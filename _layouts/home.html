@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="hero-inner">
+    <h1>{{ page.hero_tagline | default: site.title }}</h1>
+    {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+    <p class="lede">{{ site.description }}</p>
+    <p><a class="btn btn-primary" href="/recipes/">Se alle opskrifter →</a></p>
+  </div>
+</section>
+<section class="recent-recipes">
+  <h2>Seneste opskrifter</h2>
+  <ul class="card-grid">
+    {% assign recent = site.recipes | sort: 'date' | reverse | slice: 0,6 %}
+    {% for r in recent %}
+    <li class="card">
+      <a href="{{ r.url }}">
+        <h3>{{ r.title }}</h3>
+        <p>{{ r.summary }}</p>
+        <div class="mini-meta">
+          <span>{{ r.difficulty }}</span>
+          {% if r.nutrition_per_serving %}<span>{{ r.nutrition_per_serving.energy_kcal }} kcal</span>{% endif %}
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+<section class="dietary-tags">
+  <h2>Filtrér efter kategori</h2>
+  <div class="filter-tags">
+    {% assign all_tags = site.recipes | map: 'dietary_tags' | join: ',' | split: ',' | uniq | sort %}
+    {% for t in all_tags %}{% if t != '' %}<a class="pill alt" href="/tags/#{{ t | slugify }}">{{ t }}</a>{% endif %}{% endfor %}
+  </div>
+</section>
